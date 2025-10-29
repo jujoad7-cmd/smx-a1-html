@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquesta Superherois</title>
+</head>
+        <h1>Enquesta Superherois</h1>
+<body>
+    <form method="post" action="resultats.html">
+        <fieldset>
+            <label for="nom">Nom del superheroi:</label>
+            <input type="text" id="nom" name="nom"><br><br>
+            <label for="email">Email del representant:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="clau secreta">Clau Secreta:</label>
+            <input type="password" name="clau" id="clau"><br><br>
+            <label for="batalles">Nombre de batalles lluitades aquest any:</label>
+            <input type="number" id="batalles" name="batalles" min="0" max="999" required><br><br>
+            <label for="poder">Nivell de poder actual:</label>
+            <input type="range" id="poder" name="poder" min="1" max="100"><br><br>
+            <label for="data">Primera aparició com a superheroi:</label>
+            <input type="date" id="data" name="data"><br><br>
+            <label for="hora">Hora disponible per reunions:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+            <label for="color">Color principal del vestit:</label>
+            <input type="color" id="color" name="color"><br><br>
+            <label for="url">Pàgina web oficial:</label>
+            <input type="url" id="url" name="url" required><br><br>
+            <label for="tel">Telèfon d'emergència:</label>
+            <input type="tel" id="tel" name="tel" required pattern="[0-9]{9}" placeholder="123456789"><br><br>
+            <label for="Tipus">Tipus de Personatge:</label><br><br>
+            <input type="radio" name="tipus" id="Heroi">Heroi
+            <input type="radio" name="tipus" id="Heroi">Ajudant
+            <input type="radio" name="tipus" id="Heroi">Malvat
+            <p>Tipus de personatge:</p>
+            <input type="radio" id="heroi" name="tipus" value="Heroi" required>
+            <label for="heroi">Heroi</label><br>
+            <input type="radio" id="ajudant" name="tipus" value="Ajudant">
+            <label for="ajudant">Ajudant</label><br>
+            <input type="radio" id="malvat" name="tipus" value="Malvat">
+            <label for="malvat">Malvat</label><br>
+            <p>Superpoders:</p>
+            <input type="checkbox" id="volar" name="poders" value="Volar">
+            <label for="volar">Volar</label><br>
+            <input type="checkbox" id="invisibilitat" name="poders" value="Invisibilitat">
+            <label for="invisibilitat">Invisibilitat</label><br>
+            <input type="checkbox" id="superforca" name="poders" value="Superforça">
+            <label for="superforca">Superforça</label><br>
+            <label for="univers">Univers:</label>
+            <select id="univers" name="univers" required>
+                <option value="">-- Tria un univers --</option>
+                <option value="Marvel">Marvel</option>
+                <option value="DC">DC</option>
+                <option value="Altres">Altres</option>
+            </select>
+        </fieldset>
+        <fieldset>
+        <legend>Enquesta — Temàtica 1</legend>
+        <p>1. Quin és el teu enemic preferit?</p>
+        <input type="radio" name="enemics" value="Joker" required> Joker
+        <input type="radio" name="enemics" value="Thanos"> Thanos
+        <input type="radio" name="enemics" value="Lex Luthor"> Lex Luthor<br>
+        <p>2. Quin seria el teu gadget ideal?</p>
+        <input type="radio" name="gadget" value="Batmobile" required> Batmobile
+        <input type="radio" name="gadget" value="Martell de Thor"> Martell de Thor
+        <input type="radio" name="gadget" value="Escut del Capità"> Escut del Capità<br>
+        <p>3. Amb quin superheroi mai faries equip?</p>
+        <input type="radio" name="noequip" value="Deadpool" required> Deadpool
+        <input type="radio" name="noequip" value="Hulk"> Hulk
+        <input type="radio" name="noequip" value="Iron Man"> Iron Man<br>
+        </fieldset>
+        <fieldset>
+        <legend>Enquesta — Temàtica 2</legend>
+            <p>4. Quin poder t'agradaria tenir?</p>
+            <input type="radio" name="millora" value="Velocitat" required> Velocitat
+            <input type="radio" name="millora" value="Intel·ligència"> Telequinesi
+            <input type="radio" name="millora" value="Força"> Superforça<br>
+            <p>5. Quin és el teu objectiu principal com a superheroi?</p>
+            <input type="radio" name="objectiu" value="Protegir innocents" required> Protegir innocents
+            <input type="radio" name="objectiu" value="Venjar injustícies"> Venjar injustícies
+            <input type="radio" name="objectiu" value="Dominar el món"> Dominar el món<br>
+            <p>6. Quin és el teu enemic més temut?</p>
+            <input type="radio" name="enemic_temut" value="Thanos" required> Thanos
+            <input type="radio" name="enemic_temut" value="Joker"> Joker
+            <input type="radio" name="enemic_temut" value="Loki"> Loki<br>
+            <p>7. Quin és el teu millor amic dins de l’univers de superherois?</p>
+            <input type="radio" name="amic" value="Robin" required> Robin
+            <input type="radio" name="amic" value="Iron Man"> Iron Man
+            <input type="radio" name="amic" value="Black Widow"> Black Widow
+            <input type="radio" name="amic" value="Flash">Altres<br>
+            <p>8. Quin color t’identifica més?</p>
+            <input type="radio" name="colorpref" value="Vermell" required> Vermell
+            <input type="radio" name="colorpref" value="Blau"> Blau
+            <input type="radio" name="colorpref" value="Negre"> Negre<br>
+            <p>9. Amb quin superheroi faries equip?</p>
+            <input type="radio" name="equip" value="Superman" required> Superman
+            <input type="radio" name="equip" value="Spiderman"> Spiderman
+            <input type="radio" name="equip" value="Wonder Woman"> Wonder Woman<br>
+            <p>10. Quin és el teu lema?</p>
+            <input type="text" name="lema" required minlength="3" maxlength="100">
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar Enquesta">
+        </fieldset>
+    </form>
+
+</body>
+</html>
