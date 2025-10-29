@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<title>Inscripció al Curs Online de Tecnologia</title>
+</head>
+<body>
+
+<header>
+    <h1>Inscripció al Curs Online de Tecnologia</h1>
+</header>
+<main>
+    <form method="get" action="resultats.html">
+    <fieldset>
+        <legend>Dades personals</legend>
+        <label for="nom">Nom complet:</label>
+        <input type="text" id="nom" name="nom" required minlength="3" maxlength="60"><br>
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" required pattern="[0-9]{9}" placeholder="nomcognom@gmail.com"><br>
+        <label for="telefon">Telèfon:</label>
+        <input type="tel" id="telefon" name="telefon" required pattern="[0-9]{9}" placeholder="123654789"><br>
+        <label for="data-naixement">Data de naixement:</label>
+        <input type="date" id="data-naixement" name="data_naixement" required>
+    </fieldset>
+    <fieldset>
+        <legend>Tipus de Curs i Experiència prèvia</legend>
+        <label for="cursos">Cursos disponibles:</label><br>
+        <select id="cursos" name="cursos[]" multiple>
+            <optgroup label="Desenvolupament">
+                <option value="programacio-basica">Programació bàsica</option>
+                <option value="desenvolupament-web">Desenvolupament Web</option>
+                <option value="desenvolupament-videojocs">Desenvolupament de Videojocs</option>
+            </optgroup>
+            <optgroup label="Sistemes">
+                <option value="admin-sistemes">Administració de Sistemes</option>
+            </optgroup>
+        </select><br><br>
+        <label>Experiència prèvia:</label><br>
+        <input type="radio" id="novell" name="nivell" value="novell" required>
+        <label for="novell">Novat</label><br>
+        <input type="radio" id="intermedi" name="nivell" value="intermedi">
+        <label for="intermedi">Intermedi</label><br>
+        <input type="radio" id="avancat" name="nivell" value="avancat">
+        <label for="avancat">Avançat</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Interessos i motivació del curs</legend>
+
+        <label>Aspectes que t’interessen:</label><br>
+        <input type="checkbox" id="projectes" name="interessos" value="projectes">
+        <label for="projectes">Projectes pràctics</label><br>
+        <input type="checkbox" id="tutories" name="interessos" value="tutories">
+        <label for="tutories">Tutories online</label><br>
+        <input type="checkbox" id="certificats" name="interessos" value="certificats">
+        <label for="certificats">Certificats</label><br><br>
+
+        <label for="motivacio">Per què vols realitzar el curs?</label><br>
+        <textarea id="motivacio" name="motivacio" required minlength="20" maxlength="300"></textarea><br><br>
+        <label for="feina">Lloc de treball que t’interessa:</label>
+        <input list="opcions-feina" id="feina" name="feina">
+        <datalist id="opcions-feina">
+        <option value="Ciberseguretat">
+        <option value="DevOps">
+        <option value="Frontend">
+        <option value="Backen
